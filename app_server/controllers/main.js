@@ -1,5 +1,5 @@
 /* GET homepage */
-conxt index = (req, res) => {
+const index = (req, res) => {
     res.render('index', { title: 'Travlr Getaways' });
 };
 module.exports = {
