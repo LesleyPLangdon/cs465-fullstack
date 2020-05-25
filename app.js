@@ -9,12 +9,12 @@ var usersRouter = require('./app_server/routes/users');
 var travelRouter = require('./app_server/routes/travel');
 
 var app = express();
-
+var hbs = require('hbs');
 // view engine setup
 app.set('views', path.join(__dirname, 'app_server', 'views'));
 
 // register handlebars partials (https://www.npmjs.com/package/hbs)
-hbs.registerPartials(path.join(_dirname, 'app_server', 'views/partials'));
+hbs.registerPartials(path.join(__dirname, 'app_server', 'views/partials'));
 
 app.set('view engine', 'hbs');
 
