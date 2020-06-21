@@ -30,7 +30,7 @@ const travelList = (req, res) => {
     const path = '/api/trips';
     const requestOptions = {
         url: `${apiOptions.server}${path}`,
-        methodd: 'GET',
+        method: 'GET',
         json: {},
     };
 
