@@ -2,13 +2,16 @@ const express = require('express');
 const router = express.Router();
 
 const tripsController = require('../controllers/trips');
+const { put } = require('request');
 
 router
     .route('/trips')
-    .get(tripsController.tripsList);
+    .get(tripsController.tripsList)
+    .post(tripsController.tripsAddTrip);
 
 router
     .route('/trips/:tripCode')
-    .get(tripsController.tripsFindCode);
+    .get(tripsController.tripsFindCode)
+    .put(tripsController.tripsUpdateTrip);
 
 module.exports = router;
