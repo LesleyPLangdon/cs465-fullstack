@@ -46,4 +46,5 @@ process.on('SIGTERM', function() {
 });
 
 // BRING IN YOUR SCHEMAS & MODELS
-require('./travlr');
+require('./travlr'); 
+require('./user');
