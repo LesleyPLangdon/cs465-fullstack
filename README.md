@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## SNHU Full Stack Development
 
-You can use the [editor on GitHub](https://github.com/LesleyPLangdon/cs465-fullstack/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This project is my first adventure in full stack development.  We used the MEAN stack to begin building a travel web site.  Of course, I learned some basic concepts of full stack web development but I also improved in some coding skills that will carry over to any project.  With this project I worked with more lines of code and individual files than in any prior project.  I have always felt it was important to keep code organized, variables consistent and the process structured.  This project reinforced all of that.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+File names are descriptive and where applicable they are grouped in a folder together.  For example, there are multiple services, controllers and models files each stored in their respective folders.  It makes them easy to find as more and more files are added and it helps to easily identify what the individual file does while keeping the file name short. 
 
-### Markdown
+Consistent variable names helped in two ways within this project.  First, when looking for errors that could be caused by simple typos.  When class names are the file name in camel case starting with a capital and variables are camel case starting with a lower case, just looking at that simple format can identify an error.  Second, just as short, descriptive file names help keep code organized, the same applies to variables.  Variable names that clearly state what the purpose is make it easier to evaluate code.  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+A structured process will vary from project to project.  For this project the process was broken down into three basic parts set up, the build and adding functionality.  The first step was to set up the environment, add folders and give some basic structure to the application.  Next, components were added and the database developed.  In the final steps, functionality was added, including prompting users to log in to make changes to the data displayed on the page.  
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LesleyPLangdon/cs465-fullstack/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This course acts as a springboard to improved skills in web development.  Understanding how the stack works, the relationship between the css/html code and the typescript, establishing controllers, routes and models, conceptualizing how the code translates to the finish project are all critical understandings.  I plan to continue self-educating in web development.  I also feel that I am well positioned to contribute to a team as I improve my skills with the MEAN stack and learn other approaches to web development. 
