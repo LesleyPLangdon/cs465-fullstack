@@ -27,7 +27,7 @@ export class TripDataService {
   }
 
   public getTrip(tripCode: string): Promise<Trip> {
-    console.log('Inside TripDataService#addTrip)');
+    console.log('Inside TripDataService#getTrip)');
     return this.http
       .get(this.tripUrl + tripCode)
       .toPromise()
@@ -45,7 +45,7 @@ export class TripDataService {
   }
 
   public updateTrip(formData: Trip): Promise<Trip> {
-    console.log('Insied TripDataService#updateTrip');
+    console.log('Inside TripDataService#updateTrip');
     console.log(formData);
     return this.http
       .put(this.tripUrl + formData.code, formData)

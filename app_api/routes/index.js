@@ -9,7 +9,7 @@ const auth = jwt({
 
 const authController = require('../controllers/authentication');
 const tripsController = require('../controllers/trips');
-//const { put } = require('request');
+const { put } = require('request');
 
 router
     .route('/login')

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 import { TripDataService } from '../services/trip-data.service';
+import { AuthenticationService } from '../services/authentication';
 
 @Component({
   selector: 'app-edit-trip',
@@ -16,8 +17,14 @@ export class EditTripComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private router: Router,
+    private authService: AuthenticationService,
     private tripService: TripDataService
   ) { }
+  
+  public isLoggedIn(): boolean {
+    return this.authService.isLoggedIn();
+  }
+  
   ngOnInit() {
     // retrieve stashed tripID
     let tripCode = localStorage.getItem("tripCode");

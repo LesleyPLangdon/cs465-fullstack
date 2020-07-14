@@ -14,7 +14,7 @@ export class TripCardComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private authService: AuthenticationService,  ) { }
+    private authService: AuthenticationService  ) { }
 
   public isLoggedIn(): boolean {
     return this.authService.isLoggedIn();
