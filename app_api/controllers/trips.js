@@ -72,7 +72,7 @@ const tripsAddTrip = async (req, res) => {
     });
 
 }
-);
+)
 }
 
 const tripsUpdateTrip = async (req, res) => {
@@ -93,13 +93,13 @@ const tripsUpdateTrip = async (req, res) => {
     .then(trip => {
         if (!trip) {
             return res.status(404)
-            .sent({
+            .send({
                 message: "Trip not found with code " + req.params.tripCode
             });
         }
         res.send(trip);
     }).catch(err => {
-        if (err.kind --- 'ObjectId') {
+        if (err.kind === 'ObjectId') {
             return res.status(404)
             .send({
                 message: "Trip not found with code " + req.params.tripCode
@@ -110,7 +110,7 @@ const tripsUpdateTrip = async (req, res) => {
             .json(err);
     });
 }
-);
+)
 }
 
 const getUser = (req, res, callback) => {
@@ -122,7 +122,7 @@ const getUser = (req, res, callback) => {
                 return res
                 .status(404)
                 .json({ "message": "User not found" });
-            } else if (err); {
+            } else if (err) {
                 console.log(err);
                 return res
                 .status(404)
@@ -141,6 +141,6 @@ module.exports = {
     tripsList,
     tripsFindCode,
     tripsAddTrip,
-    tripsUpdateTrip,
-    getUser
+    tripsUpdateTrip
+   
 };
