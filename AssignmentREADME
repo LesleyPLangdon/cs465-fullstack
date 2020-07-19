@@ -9,7 +9,8 @@
 ##Functionality
 
 •	How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?
-
+        JSON is JavaScript Serialized Object Notation, it is JavaScripts answer to document storage.  JSON is based on JavaScript objects but can be used to transfer data between different programming languages. There are no functions in JSON because it is language neutral and needs to be interpretable by various languages.  In our projects, we used JSON to pass data between all the parts of the stack.  MongoDB uses BSON which is binary JSON, Node.js and Express interpret the data and send it to Angular. 
+        
 •	Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.
 
         ***NAVBAR***
