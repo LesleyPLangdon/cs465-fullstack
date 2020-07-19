@@ -1,8 +1,10 @@
 ##Architecture
 
 •	Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the single-page application (SPA).
+        We started this project using the Express framework for a static HTML web application, JavaScript added functionality to the site and the Angular SPA shifted the server load to the frontend.  They all work together but have different roles.  Express fills in some of the functionality gaps of Node.js assisting with the server set up and configuring basic HTML files.  JavaScript is used for the api and handles a lot of the behind the scenes nuts and bolts such as the controllers, routes and models.  The Angular SPA not only shifts the server load but we also used it to implement the action behind the HTML. 
     
 •	Why did the backend use a NoSQL MongoDB database?
+        For this application a NoSQL MongoDB was an appropriate choice because we don’t have much need for the relational aspects of a SQL database.  MongoDB stores documents, not rows and columns.  We built a schema requiring the fields we wanted just as we could require fields in a SQL database, but each instance is a little more independent and a bit easier to work with than would be the case in a relational database. 
 
 ##Functionality
 
@@ -10,9 +12,14 @@
 
 •	Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.
 
+        ***NAVBAR***
+
 ##Testing
 
 •	Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security. Explain your understanding of methods, endpoints, and security in a full stack application.
+        We used Robo 3T, the terminal and Postman to test the POST, GET and PUT methods.  When we first tried to add a new trip, we could see in the terminal that a POST was sent but we got a 404 not found error because we had not updated the back end to receive it.  Once we updated the back end, the POST showed in the terminal and we went into Robo 3T to see that the new trip data was included in the MongoDB database.  When we call or post something from within the site, we can see the GET and POST in the terminal.  If we want to test, particularly POST, without actually changing anything, we can use Postman.  If I go into Postman with the front and back ends both running and send POST to localhost:300/api/trips I get a 400 Bad Request error because it is looking for trip data, but it still shows that communication is happening.
+        
+        ***STILL NEED TO TALK ABOUT METHODS, ENDPOINTS AND SECURITY***
 
 ##Reflection
 
